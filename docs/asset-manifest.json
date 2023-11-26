@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "https://jew.ski/rematch/static/css/main.19f59def.css",
+    "main.js": "https://jew.ski/rematch/static/js/main.c3f26188.js",
+    "index.html": "https://jew.ski/rematch/index.html",
+    "main.19f59def.css.map": "https://jew.ski/rematch/static/css/main.19f59def.css.map",
+    "main.c3f26188.js.map": "https://jew.ski/rematch/static/js/main.c3f26188.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19f59def.css",
+    "static/js/main.c3f26188.js"
+  ]
+}
