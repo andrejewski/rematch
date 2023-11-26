@@ -70,6 +70,8 @@ function setUpCanvas(model: Model) {
 
 type Rgb = readonly [number, number, number]
 
+const similarColorDelta = 20
+
 function getColorOnWheelPoint(
   canvas: HTMLCanvasElement,
   x: number,
@@ -117,7 +119,7 @@ function getRandomColorSample(
       continue
     }
 
-    if (deltaE(contrastColor, rgb) < 20) {
+    if (deltaE(contrastColor, rgb) < similarColorDelta) {
       continue
     }
 
@@ -233,7 +235,7 @@ function update(msg: Msg, model: Model): Change<Msg, Model> {
         return [model]
       }
 
-      if (deltaE(clickedColor, model.nextWallColor) > 25) {
+      if (deltaE(clickedColor, model.nextWallColor) > similarColorDelta) {
         return [model]
       }
 
