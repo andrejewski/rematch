@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "https://jew.ski/rematch/static/css/main.19f59def.css",
-    "main.js": "https://jew.ski/rematch/static/js/main.f7692f83.js",
+    "main.css": "https://jew.ski/rematch/static/css/main.a8d02220.css",
+    "main.js": "https://jew.ski/rematch/static/js/main.c9be8e1c.js",
     "index.html": "https://jew.ski/rematch/index.html",
-    "main.19f59def.css.map": "https://jew.ski/rematch/static/css/main.19f59def.css.map",
-    "main.f7692f83.js.map": "https://jew.ski/rematch/static/js/main.f7692f83.js.map"
+    "main.a8d02220.css.map": "https://jew.ski/rematch/static/css/main.a8d02220.css.map",
+    "main.c9be8e1c.js.map": "https://jew.ski/rematch/static/js/main.c9be8e1c.js.map"
   },
   "entrypoints": [
-    "static/css/main.19f59def.css",
-    "static/js/main.f7692f83.js"
+    "static/css/main.a8d02220.css",
+    "static/js/main.c9be8e1c.js"
   ]
 }

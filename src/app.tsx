@@ -201,7 +201,7 @@ function update(msg: Msg, model: Model): Change<Msg, Model> {
           }
 
           const levelDuration =
-            6000 - (model.score > 30 ? model.score : model.score * 50)
+            5000 - (model.score > 50 ? model.score : model.score * 50)
           const wallProgress = Math.max(
             Math.min((Date.now() - model.levelStart) / levelDuration, 1),
             0
@@ -364,7 +364,16 @@ function view(model: Model, dispatch: Dispatch<Msg>) {
           backgroundColor: makeHexColor(model.nextWallColor),
           width: `${model.wallProgress * 100}%`,
         }}
-      ></div>
+      >
+        {model.scene === 'game' && model.score === 0 && (
+          <>
+            <div className="header header--static">
+              <h1>&nbsp;&nbsp;</h1>
+            </div>
+            <p className="tutorial-indicator">Match this color ➡</p>
+          </>
+        )}
+      </div>
     </div>
   )
 }
